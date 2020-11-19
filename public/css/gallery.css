@@ -1,0 +1,35 @@
+.gallery {
+    width: 100%;
+    margin: 20px auto;
+    columns: 3;
+    grid-auto-rows: auto;
+    column-gap: 4px;
+    padding: 5%;
+}
+
+.gallery .box {
+    width: 100%;
+    margin: 0 0 4px;
+    padding: 10px;
+    overflow: hidden;
+    break-inside: avoid;
+}
+
+.gallery .box:hover {
+    cursor: pointer;
+}
+
+.gallery .box img {
+    max-width: 100%;
+}
+
+@media only screen and (min-width: 0) and (max-width: 500px) {
+    .gallery {
+        width: 100%;
+        margin: 20px auto;
+        columns: 1;
+        grid-auto-rows: auto;
+        column-gap: 4px;
+        padding: 5%;
+    }
+}

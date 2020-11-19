@@ -1,0 +1,26 @@
+{
+  "Room": "Single"
+  {
+    "room": "single",
+    "Rid": "S1",
+    "amount/day": 50000,
+    "services": ["wifi", "pool"],
+    "TV": "StarTimes"
+  },
+  "Room": "Double"
+  {
+    "room": "double",
+    "Rid": "D1",
+    "amount/day": 60000,
+    "services": ["wifi", "pool"],
+    "TV": "GoTV"
+  },
+  "Room": "Master"
+  {
+    "room": "master",
+    "Rid": "S1",
+    "amount/day": 80000,
+    "services": ["wifi", "pool"],
+    "TV": "DSTV"
+  }
+}

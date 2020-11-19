@@ -1,0 +1,53 @@
+@font-face {
+    src: url(font/Dancing_Script/static/DancingScript-Bold.ttf);
+    font-family: dancingSB;
+}
+
+@font-face {
+    src: url(font/Satisfy/Satisfy-Regular.ttf);
+    font-family: dancingSSB;
+}
+
+.contentHeader {
+    padding: 5% 3%;
+}
+
+.contact {
+    padding: 3% 5%;
+}
+
+.contact .row .col div {
+    margin: 3% 0;
+}
+
+.contact .row .col div p {
+    margin: 0 !important;
+    font-size: 18px;
+}
+
+
+/* contact us form */
+
+.contactUs form {
+    padding: 4% 5%;
+}
+
+.contactUs form .row {
+    padding: 0 3%;
+}
+
+#googlemaps {
+    padding: 5% 0%;
+}
+
+
+/* contact form */
+
+#commentForm {
+    padding: 3% 5% 5% 5%;
+}
+
+#commentForm h2 {
+    font-family: dancingSSB;
+    margin: 5% 0 !important;
+}

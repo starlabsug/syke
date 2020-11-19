@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SYKE World Administration</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.css" media="screen,projection" />
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body class="orange white-text">
+    <div class="row white-text grey darken-4 ">
+      <div class="col l4 s12 black numbers center">
+        <h4 class="orange-text text-lighten-1"><i class="small material-icons left blue-text">folder_shared</i> Admin Profile</h4>
+        <p>You are signed in as an Administrator of SYKE World Hotel to the HomePage!</p><p class="hide-on-large-only center">Profile</p>
+      </div>
+      <div class="col l5 s12 white-text orange profile numbers">
+        <p><i class="material-icons black-text">info</i> Below is your Admin profile! if it is not you? Report below</p>
+        <div class="col l4 s12">
+          photo
+        </div>
+        <div class="col l4 s12">
+          Admin1
+        </div>
+        <div class="col l4 s12">
+          Name
+        </div>
+        <button type="button" name="button" class="btn right black darken-3" title="Reports a wrong profile setting">Report</button>
+      </div>
+      <div class="col l3 s12">
+        <p>As an administrator, always remember to <span style="color:red">Logout</span> for <span style="color:aqua">security</span> purposes and donot share your credentials</p>
+        <i class="pulse-lock medium material-icons red-text">lock</i><button type="button" name="button" class="btn right orange darken-3" title="Click to LogOut">LogOut</button>
+      </div>
+    </div>
+    <div class="row grey darken-4 numbers">
+      <div class="col l3 s12 hide-on-med-and-small black numbers">
+        <div class="row">
+          <a href="Administration.html"><h4 class="white-text hide-on-med-and-down"><i class="small material-icons red-text">dashboard</i> Dashboard</h4></a>
+        </div>
+        <nav class="black">
+        <div class="nav-wrapper black">
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="left hide-on-med-and-down">
+            <li title="Administrators"><a href="Admin.html"><img src="admin.png" class="responsive-img"> Administrators</a></li><br>
+            <li title="Employees"><a href="Employees.html"><img src="employees.png" class="responsive-img"> Employees</a></li><br>
+            <li title="Your guests"><a href="Guests.html"><img src="guests.png" class="responsive-img"> Guests</a></li><br>
+            <li title="Bookings"><a href="Bookings.html"><img src="bookings.png" class="responsive-img"> Bookings</a></li><br>
+            <li title="newsletters"><a href="Newsletters.html"><img src="newsletters.png" class="responsive-img"> Newsletters</a></li><br>
+            <li title="comments" class="active orange"><a href="Comments.html"><img src="comments.svg" class="responsive-img"> Comments</a></li><br>
+
+          </ul>
+
+        </div>
+        </nav>
+
+        <ul class="sidenav" id="mobile-demo">
+          <li><a href="Admin.html">Administrators</a></li>
+          <li class="active"><a href="Employees.html">Employees</a></li>
+          <li><a href="Guests.html">Guests</a></li>
+          <li><a href="Bookings.html">Bookings</a></li>
+          <li><a href="Newsletters.html">Newsletters</a></li>
+          <li><a href="Comments.html">Comments</a></li>
+        </ul>
+
+      </div>
+
+      <div class="col l9 s12 hide-on-med-and-small">
+
+        <div class="row center black white-text numbers s">
+          <h2 class="white-text">SYKE World Hotel</h2>
+          <div class="row black white-text s numbers main">
+            <h4 class="orange-text"><i class="small material-icons blue-text">message</i> Comments</h4>
+            <p class="white-text">Know what your guests say and think about the experience!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="black white-text center">
+      <div class="white-text">
+        <i class="small material-icons orange-text">phone</i> Phone: 0772971878 | 0756443353
+        <i class="small material-icons orange-text">email</i> Email: personal@gmail.com
+      </div>
+      <p>&copy;Copyright@2020SYKEWorldHotel Inc. Management.</p>
+    </footer>
+  </body>
+  <script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.sidenav');
+  var instances = M.Sidenav.init(elems, options);
+});
+
+// Or with jQuery
+
+$(document).ready(function(){
+  $('.sidenav').sidenav();
+  $(".dropdown-trigger").dropdown();
+});
+  </script>
+</html>

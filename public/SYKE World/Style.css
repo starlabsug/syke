@@ -1,0 +1,117 @@
+@font-face {
+    src: url(Satisfy/Satisfy-Regular.ttf);
+    font-family: DancingScript;
+}
+
+body {
+    padding: 0%;
+    scroll-behavior: smooth;
+}
+
+.row {
+    padding: 1% !important;
+}
+
+button {
+    transition: all 250ms ease-out !important;
+    margin-top: 5px !important;
+    border-radius: 10px !important;
+}
+
+h2 {
+    font-family: DancingScript;
+}
+
+.number {
+    border-radius: 25px !important;
+    color: black !important;
+}
+
+button:hover {
+    transform: scale(0.8);
+}
+
+.numbers {
+    border-radius: 10px !important;
+    border: 1px solid black !important;
+}
+
+h3 {
+    border-bottom: 1px solid white;
+}
+
+.profile {
+    padding: 1% !important;
+}
+
+img {
+    height: 80px !important;
+    width: 80px !important;
+}
+
+.main {
+    background: linear-gradient(to bottom, rgb(0, 0, 0.4), rgba(0, 0, 0, 0.7)), url("admin.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+}
+
+footer {
+    padding: 1% !important;
+}
+
+.s {
+    border: 1px solid gray !important;
+}
+
+.pulse-lock {
+    font-size: 4rem;
+    animation: pop 3s linear infinite 0s;
+    animation-timing-function: ease-in-out;
+}
+
+.active {
+    background-color: orange !important;
+}
+
+@keyframes pop {
+    0% {
+        font-size: 4rem !important;
+    }
+    25% {
+        font-size: 5rem !important
+    }
+    50% {
+        font-size: 4rem !important;
+    }
+    75% {
+        font-size: 5rem !important;
+    }
+    100% {
+        font-size: 4rem !important;
+    }
+}
+
+form {
+    padding: 2% !important;
+}
+
+.logging {
+    display: block;
+    /* Hidden by default */
+    position: fixed !important;
+    /* Stay in place */
+    z-index: 1 !important;
+    /* Sit on top */
+    left: 200px !important;
+    top: 100px !important;
+    width: 100% !important;
+    /* Full width */
+    height: 100% !important;
+    /* Full height */
+    background-color: red;
+    color: black;
+    text-align: center !important;
+    text-align: left !important;
+}

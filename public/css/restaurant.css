@@ -1,0 +1,437 @@
+@font-face {
+    src: url(font/Lato/Lato-Regular.ttf);
+    font-family: lato;
+}
+
+@font-face {
+    src: url(font/baloo/BalooTamma2-Regular.ttf);
+    font-family: baloo;
+}
+
+@font-face {
+    src: url(font/dmsans/DMSans-Regular.ttf);
+    font-family: dmsan;
+}
+
+@font-face {
+    src: url(font/Satisfy/Satisfy-Regular.ttf);
+    font-family: dancingSSB;
+}
+
+
+/* Styling for notifications menu pop up */
+
+.popup-menu {
+    position: fixed;
+    left: 2rem;
+    width: 40vh;
+    padding: 2rem 1.5rem;
+    background: rgb(18, 18, 18);
+    color: #fff;
+    font-size: 1.4rem;
+    visibility: hidden;
+    transform: translate3d(600px, 0, 0);
+    transition: all .4s ease-in-out;
+}
+
+.popup-menu.show {
+    visibility: visible;
+    transform: translate3d(0, 0, 0);
+}
+
+main#restaurant {
+    align-items: center;
+    align-content: center;
+}
+
+.section-1,
+.section-2 {
+    padding: 3rem 8rem;
+    margin: 0;
+}
+
+.section-1 .restaurant {
+    padding: 3rem 8rem;
+    background: linear-gradient(to bottom right, rgb(18, 18, 18), rgb(24, 24, 24), rgba(18, 18, 18, 0.959), rgba(24, 24, 24, 0.877)), url(img/restaurant-bg.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.section-1 .restaurant h3 {
+    font-family: dancingSSB;
+    font-size: 4rem;
+}
+
+.section-1 .restaurant .info {
+    padding: 1rem 0;
+}
+
+.section-2 .restaurant-menu h4 {
+    font-family: dancingSSB;
+    font-size: 3rem;
+    color: aqua;
+}
+
+.menu-items .menu-item .menu-info {
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+.menu-items .menu-item .menu-info a.add-cart {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 20px;
+    transition: all .3s ease-in;
+    background: orangered;
+    cursor: pointer;
+}
+
+.menu-items .menu-item .menu-info a.add-cart:hover {
+    color: orangered;
+    border: 2px solid rgb(2, 2, 2);
+    padding: 5px 15px;
+    background: #fff;
+    background-color: none;
+}
+
+.menu-items .menu-item {
+    transition: all .3s ease-in;
+}
+
+.menu-item:hover {
+    background: rgb(18, 18, 18);
+    padding: 1rem;
+}
+
+.menu-item:hover .menu-info h5 {
+    color: #fff;
+}
+
+
+/* Reservation form */
+
+#reservation {
+    padding: 3rem 10rem;
+    background-image: url('img/restaurant-pattern.jpg');
+}
+
+#reservation form {
+    padding: 0 5rem 3rem 5rem;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    align-self: center;
+}
+
+#reservation form h3 {
+    font-family: dancingSSB;
+}
+
+#reservation form label {
+    font-size: 1rem;
+}
+
+#reservation form .form-input {
+    display: flex;
+    justify-content: space-between;
+}
+
+#reservation form .input {
+    padding: 0 2rem;
+}
+
+#reservation form .form-input .input {
+    margin: 0 2rem;
+    padding: 0 !important;
+}
+
+#reservation form input {
+    outline: none !important;
+    border: 2px solid orangered;
+    padding: 0 1rem;
+    border-radius: 5px;
+}
+
+#reservation form input[type="submit"] {
+    position: relative;
+    left: 40%;
+    outline: none;
+    font-size: 1.2rem;
+    border: none;
+    color: #fff;
+    padding: 0.7rem 3rem;
+    border-radius: 20px;
+    transition: all .3s ease-in;
+    background: orangered;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+
+#reservation form input[type="submit"]:hover {
+    background: rgb(18, 18, 18);
+    color: #fff;
+}
+
+
+/* Order menu. Will be hidden and displays on click */
+
+.order-menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    z-index: 2;
+    overflow: visible;
+    visibility: hidden;
+    overflow-y: scroll;
+    padding: 5rem;
+    background: rgb(18, 18, 18);
+    transform: translate3d(600px, 0, 0);
+    transition: all .4s ease-in-out;
+}
+
+.order-menu.show {
+    visibility: visible;
+    transform: translate3d(0, 0, 0);
+}
+
+.order-btn {
+    position: absolute;
+    z-index: 3;
+    right: 35px;
+    top: 15rem;
+    cursor: pointer;
+    padding: 10px 2rem;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    background: rgb(18, 18, 18);
+    transition: all .3s ease-in;
+}
+
+
+/* order button tirgger on small devices */
+
+.menu-order-btn.order-btn {
+    position: relative;
+    padding: 0 1rem;
+    border-radius: 5px;
+    top: 3rem;
+    font-size: 1rem;
+    float: right;
+    right: 0;
+    border: none;
+    background: rgb(18, 18, 18);
+    border: 1px solid #fff;
+}
+
+.order-btn:hover {
+    background: rgb(18, 18, 18);
+}
+
+.order-btn:hover .btn-line {
+    background-color: #fff;
+}
+
+.order-btn h4 {
+    font-size: 1rem;
+    color: #fff;
+}
+
+.order-btn .btn-line {
+    width: 1rem;
+    height: 1px;
+    margin: 0 0 5px 0;
+    background: #fff;
+}
+
+
+/* //rotate into x with menu lines */
+
+
+/* .order-btn.close {
+    transform: rotate(180deg);
+}
+
+.order-btn.close h4 {
+    transform: rotate(-180deg);
+} */
+
+
+/* Line 1-rotate */
+
+
+/* .order-btn.close .btn-line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+
+/* //Line 2 - rotate */
+
+
+/* .order-btn.close .btn-line:nth-child(2) {
+    opacity: 0;
+} */
+
+
+/* //Line 3 - rotate */
+
+
+/* .order-btn.close .btn-line:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+} */
+
+
+/* Order menu */
+
+.order-menu h3 {
+    color: #fff;
+}
+
+.order-menu #order-form form {
+    padding: 2rem 3rem;
+    display: block;
+    color: #fff;
+}
+
+.order-menu #order-form form .orders {
+    padding: 0 2rem;
+}
+
+.order-menu #order-form form .orders table tr td input {
+    border: none !important;
+    margin: none !important;
+    outline: none !important;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.order-menu #order-form form .orders table tr td .deleteBtn {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    background: red;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all .3s ease-in-out;
+}
+
+.order-menu #order-form form .orders table tr td .deleteBtn:hover {
+    opacity: .7;
+}
+
+.order-menu #order-form form p.total {
+    color: #fff;
+}
+
+.order-menu #order-form form p.no-orders {
+    color: red;
+    position: relative;
+    z-index: 1;
+    font-size: 1.4rem;
+    display: none;
+}
+
+.order-menu #order-form form p.view {
+    display: block;
+}
+
+.order-menu #order-form form .custom-order {
+    padding: 2rem 0;
+}
+
+.order-menu #order-form form .custom-order .input label {
+    font-size: 1.4rem;
+}
+
+.order-menu #order-form form .custom-order .input textarea {
+    color: #fff;
+    border: 2px solid orangered;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+}
+
+.order-menu #order-form form .input input[type="submit"] {
+    border: none;
+    outline: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    background: orangered;
+    color: #fff;
+}
+
+.order-menu #order-form form .input input[type="submit"]:hover {
+    background: #fff;
+    color: rgb(18, 18, 18);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+    * {
+        align-items: center;
+        align-self: center;
+        align-content: center;
+    }
+    header {
+        padding: 5rem 2rem;
+    }
+    .section-1,
+    .section-2 {
+        padding: 0;
+        margin: 0;
+    }
+    .section-1 .restaurant {
+        padding: 5rem 1rem;
+        background: linear-gradient(to bottom right, rgb(18, 18, 18), rgb(24, 24, 24), rgba(18, 18, 18, 0.959), rgba(24, 24, 24, 0.877)), url(img/restaurant-bg.jpg) center no-repeat;
+        background-size: cover;
+        text-align: center;
+    }
+    .section-1 .restaurant h3 {
+        font-family: dancingSSB;
+        font-size: 3rem;
+        text-align: center;
+    }
+    .section-2 .restaurant-menu {
+        padding: 2rem 3rem;
+    }
+    .section-2 .restaurant-menu .menu-items h5 {
+        text-align: center;
+    }
+    #reservation {
+        padding: 3rem 0;
+        background-image: url('img/restaurant-pattern.jpg');
+    }
+    #reservation form {
+        padding: 0 2rem 3rem 0rem;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        align-self: center;
+    }
+    #reservation form h3 {
+        font-size: 2rem;
+    }
+    .order-menu {
+        padding: 0;
+    }
+    .order-btn {
+        right: 35px;
+        top: 10rem;
+    }
+    .order-menu #order-form form .orders {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    @content;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+    @content;
+}
+
+@media screen and (min-width: 1171px) {
+    @content;
+}

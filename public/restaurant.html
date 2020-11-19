@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syke World</title>
+
+    <!-- cdn importation -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/12c18de3e7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/">
+
+    <!-- materialise cdn -->
+    <link rel="stylesheet" href="plugins/materialise/css/materialize.css">
+    <link rel="stylesheet" href="plugins/materialise/css/materialize.min.css">
+
+    <!-- css links -->
+    <link rel="stylesheet" href="css/restaurant.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- hover master importation -->
+    <link rel="stylesheet" href="plugins/hover/hover-min.css">
+    <link rel="stylesheet" href="plugins/hover/hover.css">
+
+    <!-- importing aos -->
+    <link rel="stylesheet" href="plugins/aos/dist/aos.css">
+    <script src="plugins/aos/dist/aos.js"></script>
+
+    <!-- importing anime js -->
+    <link rel="stylesheet" href="plugins/anime/css/anime.css">
+    <link rel="stylesheet" href="plugins/anime/css/anime-theme.css">
+
+</head>
+
+<body>
+
+    <div class="navbar-fixed">
+        <nav class="z-depth-0">
+            <div class="nav-wrapper">
+                <a href="" class="brand-logo orange-text darken-3"><span class="white-text">Syke</span> World</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <a class="menu-order-btn order-btn2 right-align hide-on-large-only">
+                    <h4>VIEW ORDERS</h4>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li class="active"><a href="" class="orange-text text-darken-3">Home</a></li>
+                    <li><a href="" class="orange-text text-darken-3">Details</a></li>
+                    <li><a href="" class="orange-text text-darken-3">Gallery</a></li>
+                    <li><a href="" class="orange-text text-darken-3">Contact</a></li>
+                    <li><a href="" class="orange-text text-darken-3">About</a></li>
+                    <li><a href="" class="orange darken-4 grey-text text-lighten-3">LOGIN</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <ul class="sidenav grey darken-4" id="mobile-demo">
+        <li class="active"><a href="" class="orange-text darken-3"><i class="material-icons small orange-text text-darken-4">home</i>Home</a></li>
+        <li><a href="" class="orange-text text-darken-3"><i class="material-icons orange-text text-darken-4">hotel</i>Details</a></li>
+        <li><a href="" class="orange-text text-darken-3"><i class="material-icons orange-text text-darken-4">photo_album</i>Gallery</a></li>
+        <li><a href="" class="orange-text text-darken-3"><i class="material-icons orange-text text-darken-4">phone</i>Contact</a></li>
+        <li><a href="" class="orange-text text-darken-3"><i class="material-icons orange-text text-darken-4">contacts</i>About</a></li>
+        <div class="divider"></div>
+        <div class="footer center white-text">
+            <h4 class="center">Syke World</h4>
+            <a href="" class="center orange-text">Sign Up or Sign In</a>
+            <p class="white-text center"> © 2020 Copyright. All Rights Reserved</p>
+        </div>
+    </ul>
+
+    <header class="z-depth-0 navHeader hide-on-med-and-down grey darken-4" style="margin: 0 !important; padding: 8px 0;">
+        <div class="nav-content white-text" style="display: flex;">
+            <div class="navlinks container" style="display: flex;">
+                <span>
+                        <p><i class="material-icons orange-text text-darken-4">phone</i> +233 2333 23312</p>
+                    </span>
+                <span style="margin: 0 20px">
+                        <p><i class="material-icons orange-text text-darken-4">location</i> Paidha, Zombo</p>
+                    </span>
+            </div>
+            <div class="links">
+                <a href="https://www.facebook.com/Syke-World-118621122867541/" class="white-text">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="" class="white-text"><i class="fab fa-twitter"></i></a>
+                <a href="" class="white-text"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <span><h6 class="center white-text">"Lorem, ipsum dolor sit amet consectetur adipisicing elit."</h6></span>
+    </header>
+
+    <!-- order menu btn toggler -->
+    <div class="order-btn hide-on-med-and-down">
+        <h4>VIEW ORDERS</h4>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+    </div>
+
+    <!-- order menu -->
+    <div class="order-menu">
+        <h3 class="center-align">YOUR ORDERS</h3>
+        <div id="order-form">
+            <form action="" method="POST" class="order-form">
+                <div class="orders">
+                    <table class="order-table">
+                        <tr>
+                            <th>ORDER</th>
+                            <th>PRICE</th>
+                            <th>REMOVE</th>
+                        </tr>
+                    </table>
+                </div>
+                <p class="no-orders">
+                    No orders currently.
+                </p>
+                <p class="total">
+                </p>
+                <div class="custom-order">
+                    <div class="input">
+                        <label for="custon">Special Order</label>
+                        <textarea class="materialize-textarea" name="customorder" id="" cols="40" rows="20" placeholder="Place special order"></textarea>
+                    </div>
+                </div>
+                <div class="input">
+                    <input type="submit" value="ORDER NOW">
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- end of order menu -->
+
+    <!-- notification panels -->
+    <div class="popup-menu">
+    </div>
+
+    <main id="restaurant">
+        <div class="section-1">
+            <div class="restaurant z-depth-4">
+                <div class="hdr">
+                    <h3 class="orange-text text-darken-3">Bar and Restaurant</h3>
+                </div>
+
+                <div class="info">
+                    <h4 class="white-text text-darken-3">Open time</h4>
+                    <p class="orange-text text-darken-3">06:30 HRS - 23:00 HRS</p>
+                    <p class="white-text text-darken-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio adipisci ipsa labore exercitationem nostrum accusantium hic. Tempore consectetur reprehenderit quidem soluta, eaque harum aut unde temporibusculpa explicabo illo ratione!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio adipisci ipsa labore exercitationem nostrum accusantium hic.</p>
+                </div>
+
+                <a href="#" class="btnC orange darken-4 center">Make reservation</a>
+            </div>
+        </div>
+        <div class="section-2">
+            <div class="restaurant-menu">
+                <h4 class="orange-text text-darken-3 center-align">Restaurant Menu</h4>
+                <div class="menu-items row">
+                    <h5>Breakfast Menu</h5>
+                    <div class="menu-item col s12 m4 l3">
+                        <div class="row">
+                            <div class="col s12 l12 m12 menu-img">
+                                <img src="images/menu/menu-1.jpg" class="responsive-img" alt="" srcset="">
+                            </div>
+                            <div class="col s12 l12 m12 menu-info">
+                                <h6 class="orange-text text-darken-3">Lorem Ipsum doler</h6>
+                                <h5>UGX 12000</h5>
+                                <a class="add-cart" data-target="1">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item col s12 m4 l3">
+                        <div class="row">
+                            <div class="col s12 l12 m12 menu-img">
+                                <img src="images/menu/menu-1.jpg" class="responsive-img" alt="" srcset="">
+                            </div>
+                            <div class="col s12 l12 m12 menu-info">
+                                <h6 class="orange-text text-darken-3">Lorem Ipsum doler</h6>
+                                <h5>UGX 12000</h5>
+                                <a class="add-cart" data-target="2">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item col s12 m4 l3">
+                        <div class="row">
+                            <div class="col s12 l12 m12 menu-img">
+                                <img src="images/menu/menu-1.jpg" class="responsive-img" alt="" srcset="">
+                            </div>
+                            <div class="col s12 l12 m12 menu-info">
+                                <h6 class="orange-text text-darken-3">Lorem Ipsum doler</h6>
+                                <h5>UGX 12000</h5>
+                                <a class="add-cart" data-target="3">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item col s12 m4 l3">
+                        <div class="row">
+                            <div class="col s12 l12 m12 menu-img">
+                                <img src="images/menu/menu-1.jpg" class="responsive-img" alt="" srcset="">
+                            </div>
+                            <div class="col s12 l12 m12 menu-info">
+                                <h6 class="orange-text text-darken-3">Lorem Ipsum doler</h6>
+                                <h5>UGX 12000</h5>
+                                <a class="add-cart" data-target="4">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-items row">
+                    <h5>Lunch Menu</h5>
+                    <div class="menu-item col s12 m4 l3">
+                        <div class="row">
+                            <div class="col s12 l12 m12 menu-img">
+                                <img src="images/menu/menu-1.jpg" class="responsive-img" alt="" srcset="">
+                            </div>
+                            <div class="col s12 l12 m12 menu-info">
+                                <h6 class="orange-text text-darken-3">Lorem Ipsum doler</h6>
+                                <h5>UGX 12000</h5>
+                                <a class="add-cart">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item col s12 m4 l3">
+                        <div class="row">
+                            <div class="col s12 l12 m12 menu-img">
+                                <img src="images/menu/menu-1.jpg" class="responsive-img" alt="" srcset="">
+                            </div>
+                            <div class="col s12 l12 m12 menu-info">
+                                <h6 class="orange-text text-darken-3">Lorem Ipsum doler</h6>
+                                <h5>UGX 12000</h5>
+                                <a class="add-cart">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item col s12 m4 l3">
+                        <div class="row">
+                            <div class="col s12 l12 m12 menu-img">
+                                <img src="images/menu/menu-1.jpg" class="responsive-img" alt="" srcset="">
+                            </div>
+                            <div class="col s12 l12 m12 menu-info">
+                                <h6 class="orange-text text-darken-3">Lorem Ipsum doler</h6>
+                                <h5>UGX 12000</h5>
+                                <a class="add-cart">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item col s12 m4 l3">
+                        <div class="row">
+                            <div class="col s12 l12 m12 menu-img">
+                                <img src="images/menu/menu-1.jpg" class="responsive-img" alt="" srcset="">
+                            </div>
+                            <div class="col s12 l12 m12 menu-info">
+                                <h6 class="orange-text text-darken-3">Lorem Ipsum doler</h6>
+                                <h5>UGX 12000</h5>
+                                <a class="add-cart">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-items row">
+                    <h5>Dinner Menu</h5>
+                    <div class="menu-item col s12 m4 l3">
+                        <div class="row">
+                            <div class="col s12 l12 m12 menu-img">
+                                <img src="images/menu/menu-1.jpg" class="responsive-img" alt="" srcset="">
+                            </div>
+                            <div class="col s12 l12 m12 menu-info">
+                                <h6 class="orange-text text-darken-3">Lorem Ipsum doler</h6>
+                                <h5>UGX 12000</h5>
+                                <a class="add-cart">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item col s12 m4 l3">
+                        <div class="row">
+                            <div class="col s12 l12 m12 menu-img">
+                                <img src="images/menu/menu-1.jpg" class="responsive-img" alt="" srcset="">
+                            </div>
+                            <div class="col s12 l12 m12 menu-info">
+                                <h6 class="orange-text text-darken-3">Lorem Ipsum doler</h6>
+                                <h5>UGX 12000</h5>
+                                <a class="add-cart">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item col s12 m4 l3">
+                        <div class="row">
+                            <div class="col s12 l12 m12 menu-img">
+                                <img src="images/menu/menu-1.jpg" class="responsive-img" alt="" srcset="">
+                            </div>
+                            <div class="col s12 l12 m12 menu-info">
+                                <h6 class="orange-text text-darken-3">Lorem Ipsum doler</h6>
+                                <h5>UGX 12000</h5>
+                                <a class="add-cart">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item col s12 m4 l3">
+                        <div class="row">
+                            <div class="col s12 l12 m12 menu-img">
+                                <img src="images/menu/menu-1.jpg" class="responsive-img" alt="" srcset="">
+                            </div>
+                            <div class="col s12 l12 m12 menu-info">
+                                <h6 class="orange-text text-darken-3">Lorem Ipsum doler</h6>
+                                <h5>UGX 12000</h5>
+                                <a class="add-cart">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="reservation" class="z-depth-2">
+                    <form action="" method="post">
+                        <h3 class="center-align">Make Reservetion</h3>
+                        <div class="input">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" placeholder="John Doe">
+                        </div>
+                        <div class="form-input">
+                            <div class="input">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" placeholder="johndoe@email.com">
+                            </div>
+                            <div class="input">
+                                <label for="mobile">Phone number</label>
+                                <input type="text" name="phonenumber" placeholder="0770 000 000">
+                            </div>
+                        </div>
+                        <div class="form-input">
+                            <div class="input">
+                                <label for="seats">Number of Seats</label>
+                                <input type="text" name="seats" id="seats" placeholder="1 seat">
+                            </div>
+                            <div class="input">
+                                <label for="tables">Number of Tables</label>
+                                <input type="text" name="tables" id="tables" placeholder="1 table">
+                            </div>
+                        </div>
+                        <div class="input">
+                            <label for="checkin">Checkin Date & Time</label>
+                            <input type="text" name="checkin" id="checkin" placeholder="Thursday 20, 6:00 AM">
+                        </div>
+
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- jquery importation -->
+    <script src="plugins/jquery-3.4.1/dist/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/restaurant.js"></script>
+    <script src="js/order.js"></script>
+
+    <!-- materialise importation -->
+    <script src="plugins/materialise/js/materialize.js"></script>
+    <script src="plugins/materialise/js/materialize.min.js"></script>
+
+</body>
+
+</html>

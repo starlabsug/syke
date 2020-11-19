@@ -1,0 +1,61 @@
+@font-face {
+    src: url(font/Satisfy/Satisfy-Regular.ttf);
+    font-family: dancingSSB;
+}
+
+.content {
+    padding: 0 7%;
+    background: rgb(22, 22, 22);
+}
+
+h2 {
+    font-family: dancingSSB;
+}
+
+form {
+    padding: 10% 7% 14% 7%;
+    border-radius: 20px;
+}
+
+form .input-field {
+    padding: 2% 0;
+}
+
+.formImg {
+    display: flex;
+    justify-content: center;
+}
+
+.formImg img {
+    margin: 0 20px;
+}
+
+@media only screen and (min-width: 0) and (max-width: 400px) {
+    .content {
+        padding: 10% 0 !important;
+        background: rgb(22, 22, 22);
+    }
+    h2 {
+        font-family: dancingSSB;
+        font-size: 30px !important;
+    }
+    form {
+        padding: 10% 2% 14% 2%;
+        border-radius: 20px;
+    }
+    form .input-field {
+        padding: 2% 0;
+    }
+    .formImg {
+        display: flex;
+        justify-content: center;
+    }
+    .formImg img {
+        margin: 0 20px;
+        height: 70px;
+        width: 70px;
+    }
+    footer {
+        padding: 4% 0;
+    }
+}

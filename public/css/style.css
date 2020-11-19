@@ -1,0 +1,262 @@
+@font-face {
+    src: url(font/Dancing_Script/static/DancingScript-Bold.ttf);
+    font-family: dancingSB;
+}
+
+@font-face {
+    src: url(font/Satisfy/Satisfy-Regular.ttf);
+    font-family: dancingSSB;
+}
+
+.nav {
+    padding: 7% 5% 7% 5%;
+    background: linear-gradient(rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.589)), url('img/FB_IMG_1597857265481.jpg') center no-repeat;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    animation-name: slider;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+.nav-header {
+    padding: 10% 0;
+    margin: 5% 0;
+}
+
+.header-sl {
+    padding: 15% 5%;
+}
+
+.headerIcons {
+    padding: 3% 0;
+}
+
+.headerIcons li {
+    margin: 2% 0;
+}
+
+.headerIcons li p {
+    margin: 0 2%;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 500px;
+    margin: 0 !important;
+}
+
+.slideBody {
+    padding: 3% 2%;
+    margin: 3% 0 3% 5%;
+    color: rgb(0, 0, 0);
+}
+
+.slideBody h4 {
+    width: 20%;
+}
+
+
+/* content */
+
+
+/* Form */
+
+#bookingForm {
+    padding: 3% 5%;
+    margin: 0;
+}
+
+#bookingForm #bookForm-m {
+    width: 100%;
+}
+
+#bookingForm form {
+    padding: 2% 3%;
+    border: 10px solid transparent;
+    border-width: 10px 0;
+    background-color: rgb(19, 19, 19);
+    background-color: hsla(0, 0%, 0%, 0);
+    background-image: linear-gradient(rgb(19, 19, 19), rgb(19, 19, 19)), linear-gradient(to bottom right, transparent 50.5%, rgb(19, 19, 19) 50.5%), linear-gradient(to bottom left, transparent 50.5%, rgb(19, 19, 19) 50.5%), linear-gradient(to top right, transparent 50.5%, rgb(19, 19, 19) 50.5%), linear-gradient(to top left, transparent 50.5%, rgb(19, 19, 19) 50.5%);
+    background-repeat: repeat, repeat-x, repeat-x, repeat-x, repeat-x;
+    background-position: 0 0, 10px 0, 10px 0, 10px 100%, 10px 100%;
+    background-size: auto auto, 20px 20px, 20px 20px, 20px 20px, 20px 20px;
+    background-clip: padding-box, border-box, border-box, border-box, border-box;
+    background-origin: padding-box, border-box, border-box, border-box, border-box;
+}
+
+#bookingForm form h3 {
+    font-family: dancingSSB;
+}
+
+
+/* rooms */
+
+.rooms {
+    padding: 3% 5%;
+}
+
+.rooms h2 {
+    font-family: dancingSSB;
+}
+
+.rooms h5 {
+    margin: 0 0 3% 0 !important;
+}
+
+.room {
+    border-radius: 4px;
+    margin: 3% 0;
+    padding: 0 0 20px 0;
+    border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%;
+    box-shadow: 20px 20px rgba(0, 0, 0, 0.15);
+    transition: all .4s ease;
+    background: rgb(19, 19, 19) !important;
+}
+
+.room:hover {
+    border-radius: 0% 0% 50% 50% / 0% 0% 5% 5%;
+    box-shadow: 10px 10px rgba(0, 0, 0, .25);
+}
+
+.room:hover .room .roomText {
+    padding: 2px 20px 20px 20px;
+}
+
+.room .roomImg img {
+    height: 290px;
+    width: 100%;
+}
+
+.room .roomText {
+    padding: 4px 20px 14px 20px;
+}
+
+.rooms .row .col {
+    padding: 8px 18px;
+}
+
+
+/* services */
+
+#services {
+    margin: 0 !important;
+    padding: 3% 5% 5% 5%;
+    background: linear-gradient(rgb(19, 19, 19), rgb(19, 19, 19), rgba(19, 19, 19, 0.61)), url('img/rooms-1.jpg') center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#services h2 {
+    padding: 3% 5%;
+    font-family: dancingSSB;
+}
+
+.service {
+    margin: 3% 0;
+}
+
+
+/* Image slider */
+
+#imageSlider {
+    padding: 3% 5%;
+}
+
+
+/* diner(bar and restaurant) */
+
+#diner {
+    padding: 3% 5% 5% 5%;
+    background: linear-gradient(rgba(0, 0, 0, 0.87), rgba(0, 0, 0, 0.808), rgba(0, 0, 0, 0.534)), url('img/checked-tablecloth-maria-toutoudaki.jpg')center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#diner h2 {
+    font-family: dancingSSB;
+    padding: 3% 0;
+}
+
+.restaurant h3,
+.bar h3 {
+    font-family: dancingSSB;
+}
+
+.menu {
+    padding: 2% 3% !important;
+}
+
+.menu .row {
+    padding: 5% 4%;
+    border-radius: 20px;
+}
+
+.menu .row .col img {
+    border-radius: 1000px;
+    margin: 3% 0;
+}
+
+
+/* comment */
+
+#testimonial {
+    padding: 3% 5% 5% 5%;
+}
+
+#testimonial h2 {
+    font-family: dancingSSB;
+    margin: 5% 0 !important;
+}
+
+.comment {
+    padding: 8% 0;
+    margin: 5% 0 !important;
+    display: flex;
+}
+
+.comment .commentImg {
+    width: 40%;
+    padding: 0 1%;
+}
+
+.comment .commentImg h1 {
+    padding: 2%;
+}
+
+.comment .commentBody {
+    padding: 1%;
+    width: 60%;
+}
+
+@media only screen and (min-width: 0) and (max-width: 400px) {
+    .comment {
+        justify-items: center;
+        display: flex;
+        flex-direction: column wrap;
+        height: 340px !important;
+    }
+    .comment .commentImg {
+        justify-content: center;
+        width: 100%;
+        padding: 3%;
+    }
+    .comment .commentBody {
+        padding: 0 3%;
+        width: 100%;
+    }
+    h2 {
+        font-size: 34px !important;
+        font-family: dancingSSB;
+        margin: 5% 0 !important;
+    }
+}
+
+#commentForm {
+    padding: 3% 5% 5% 5%;
+}
+
+#commentForm h2 {
+    font-family: dancingSSB;
+    margin: 5% 0 !important;
+}

@@ -1,0 +1,182 @@
+@font-face {
+    src: url(font/Comfortaa/static/Comfortaa-Regular.ttf);
+    font-family: comfortaa-reg;
+}
+
+@font-face {
+    src: url(font/Lato/Lato-Regular.ttf);
+    font-family: lato;
+}
+
+@font-face {
+    src: url(font/baloo/BalooTamma2-Regular.ttf);
+    font-family: baloo;
+}
+
+@font-face {
+    src: url(font/dmsans/DMSans-Regular.ttf);
+    font-family: dmsan;
+}
+
+* {
+    font-family: dmsan;
+}
+
+:root {
+    --primary: rgb(211, 84, 0);
+    --secondary: #181818;
+    --grey: #ddd;
+}
+
+nav {
+    padding: 0 8% 4% 8%;
+    background: var(--secondary);
+}
+
+header.navHeader {
+    padding: 8px 4%;
+    margin: 0;
+    background: #1d1d1d !important;
+}
+
+header.navHeader .nav-content .navLinks {
+    padding: 0 20px;
+}
+
+.navLinks div {
+    display: flex;
+}
+
+.navLinks span p {
+    margin: 0 20px;
+}
+
+.links {
+    display: flex !important;
+}
+
+.nav-content .navProfile {
+    display: flex;
+    padding: 0 20px;
+    border-left: 2px solid #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* custom button */
+
+.btnC {
+    font-size: 18px;
+    padding: 7px 17px 9px 17px;
+    color: #fff;
+    border-radius: 20px;
+    transition: all .13s ease-in-out;
+    font: uppercase;
+    border: none;
+    outline: none;
+}
+
+.btnC:hover {
+    background: transparent !important;
+    border: 2px solid orangered;
+    color: rgb(180, 180, 180);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+/* custom font styles */
+
+.fontC {
+    color: var(--primary) !important;
+}
+
+.sidenav li {
+    padding: 10px 0;
+}
+
+.sidenav li a {
+    font-size: 18px !important;
+}
+
+
+/* select */
+
+select {
+    border-radius: 4px;
+}
+
+option {
+    padding: 14px 0;
+}
+
+footer {
+    margin: 0;
+    padding: 3% 5% !important;
+    background: linear-gradient(rgb(19, 19, 19), rgb(19, 19, 19), rgba(19, 19, 19, 0.925)), url('img/rooms-1.jpg') center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.subscribe {
+    padding: 3% 4%;
+    border-radius: 3px;
+}
+
+.socialLinks {
+    padding: 3% 2%;
+}
+
+.socialLinks .links {
+    display: flex;
+}
+
+.socialLinks a {
+    margin: 0 10px;
+}
+
+.socialLinks a i {
+    font-size: 17px;
+    transition: .3s ease-in-out;
+    padding: 7px;
+}
+
+.socialLinks a i:hover {
+    font-size: 20px;
+}
+
+.footer-copyright {
+    padding: 2% 0;
+}
+
+@media only screen and (min-width: 0) and (max-width: 300) {
+    nav,
+    nav .nav-wrapper i,
+    nav a.sidenav-trigger,
+    nav a.sidenav-trigger i {
+        height: 55px;
+        line-height: 55px;
+    }
+    nav .brand-logo {
+        position: absolute;
+        color: #fff;
+        display: inline-block;
+        font-size: 1.3rem !important;
+        padding: 0;
+    }
+    nav .brand-logo.center {
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%)
+    }
+}
+
+
+/* styling for image for display (non gallery andbackground images) */
+
+.image {
+    margin: 0 !important;
+}

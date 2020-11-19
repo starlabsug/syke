@@ -1,0 +1,20 @@
+@font-face {
+    src: url(font/Satisfy/Satisfy-Regular.ttf);
+    font-family: dancingSSB;
+}
+
+.content {
+    padding: 2% 3%;
+}
+
+h2 {
+    font-family: dancingSSB;
+}
+
+.bookingForm {
+    padding: 2% 3%;
+}
+
+tr td span {
+    font-weight: 600 !important;
+}
